@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff;
+}
+
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    z-index: 1;
+}
+
+#nav {
+    height: 46px;
+    line-height: 46px;
+    font-size: 0;
+}
+
+#nav li {
+    display: inline-block;
+    line-height: 46px;
+}
+
+
+#nav li a {
+    color: #fff;
+    line-height: 46px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding:0 20px;
+}
+
+#nav li:hover a {
+    background-color: #ccc;
+    color: #000;
+    display: block;
+}
+
+#slider {
+    padding-top: 50%;
+    margin-top:46px;
+    background:url('./picture/chicago.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#slider div {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+#slider div h3 {
+    font-size:24px;
+    line-height: 24px;
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+#slider div p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#content {
+
+}
+
+#content .section {
+    max-width: 800px;
+    margin: 0 auto;
+   
+    padding: 64px 0;
+}
+
+#content .section h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 25px 0px;
+    text-align: center;
+}
+
+#content .section .section-sub-heading {
+   font-style: italic;
+   opacity: 0.6;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+#content .section .introduction {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+#content .member-list {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 47px 0 32px 0;
+}
+
+#content .member {
+    text-align: center;
+}
+
+#content .member-name {
+    font-size:15px;
+    text-align: center;
+    
+}
+
+#content .member img {
+    width: 154px;
+    border-radius: 5px;
+    margin: 15px 0 16px 0;
+}
+
+#content #tour-date {
+    background-color: #000;
+}
+
+#tour-date .table-buy-ticket {
+    background-color: #fff;
+}
+
+#tour-date .table-buy-ticket  li {
+    padding: 11px 16px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+#tour-date li .sold-out {
+    color: #fff;
+    padding: 3px 9px;
+    margin-left:16px ;
+    background-color: #f44336;
+}
+
+#tour-date li .quantity {
+    color: #fff;
+    float: right;
+    padding: 3px 8px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+#tour-date .location {
+    display: flex;
+    margin-right:-8px;
+    margin-left: -8px;
+    padding:32px 0;
+    margin-bottom: 32px;
+}
+
+#tour-date .location-items {
+    padding: 0 8px;
+}
+
+#tour-date .location img {
+    display: block;
+    width: 100%;
+}
+
+#tour-date .location img:hover {
+    opacity: 0.4;
+}
+
+#tour-date .location-content {
+    padding: 0 16px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+#tour-date .location-content .location-heading {
+    margin-top: 15px;
+}
+
+#tour-date .location-content .location-time {
+    opacity:0.6;
+    margin: 15px 0;
+}
+
+#tour-date .location-content .location-ct {
+    margin-bottom: 15px;
+}
+
+#tour-date .location-content  a {
+    display: inline-block;
+    padding:11px 16px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 25px;
+    
+    
+}
+
+#tour-date .location-content  a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.section .contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.section .contact .address {
+
+}
+
+.section .contact p {
+    font-size: 18px;
+}
+
+.section .form-address {
+    
+}
+
+.form-address input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-address .form-address-top input:nth-child(1){
+    margin-right: 8px;
+    margin-bottom:8px;
+}
+
+.form-address .form-address-top input:nth-child(2){
+    margin-left: 8px;
+    margin-bottom:8px;
+}
+
+.form-address .form-address-bottom input {
+    width: 100%;
+}
+
+.form-address a {
+    color: #fff;
+    margin: 16px 0;
+    float: right;
+    padding: 11px 15px;
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+#content .map img {
+    filter: grayscale(50%);
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    text-align: center;
+    padding: 64px 0;
+    opacity: 0.6;
+
+}
+
+#footer .social a {
+    color: #000;
+    font-size: 24px;
+}
+
+#footer p {
+    margin: 25px 0;
+}
+
+#footer p a {
+    text-decoration: underline;
+    color: #000;
+    font-size: 15px;
+}
+    
+   
+    
+
+    
+    
+
+
+
+
+  
+    
+    
+
+    
+
+
+
+
+
+
