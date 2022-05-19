@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <div id="header">
@@ -17,6 +18,10 @@
             <li><a href="">Contact</a></li>
             <li><a href="">More</a></li>
         </ul>
+
+        <div id="mobile-menu">
+            <i class="menu-icon ti-menu"></i>
+        </div>
     </div>
 
     <div id="slider">
@@ -153,5 +158,21 @@
         </div>
         <p>Powered by <a href="#">w3.css</a></p>
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu')
+        var headerHeight = header.clientHeight;
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null
+            }
+        }
+        
+        
+    </script>
 </body>
 </html>
+                

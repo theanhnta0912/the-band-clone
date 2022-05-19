@@ -36,14 +36,15 @@ li {
     left: 0;
     right: 0;
     top: 0;
-    
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav {
     height: 46px;
     line-height: 46px;
     font-size: 0;
+    display: inline-block;
 }
 
 #nav li {
@@ -61,6 +62,22 @@ li {
 }
 
 #nav li:hover a {
+    background-color: #ccc;
+    color: #000;
+    display: block;
+}
+
+#header #mobile-menu {
+    float: right;
+    color: #fff;
+}
+    
+#header .menu-icon {
+    line-height: 46px;
+    padding: 0 24px;
+}  
+
+#header .menu-icon:hover {
     background-color: #ccc;
     color: #000;
     display: block;
@@ -103,9 +120,11 @@ li {
 
 #content .section {
     width: 800px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 0;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section h2 {
